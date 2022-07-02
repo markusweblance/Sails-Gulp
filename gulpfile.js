@@ -29,11 +29,9 @@ function watcher() {
 	gulp.watch(path.watch.img, img)
 }
 
-module.exports = { svgSprite }
 
 const fonts_create = gulp.series(otfToTtf, ttfToWoff)
 
-module.exports = { fonts_create }
 
 const mainTasks = gulp.series(fontsStyle, gulp.parallel(scss, js, img, svgSprite))
 
@@ -47,3 +45,6 @@ gulp.task('default', dev);
 //gulp.task('default', prod);
 
 gulp.task('prod', prod);
+
+gulp.task('svgSprite', svgSprite)
+gulp.task('fonts_create', fonts_create)
