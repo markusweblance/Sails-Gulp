@@ -1,0 +1,5 @@
+assets/**/*.*
+gulp.js
+
+views/**/*.ejs
+

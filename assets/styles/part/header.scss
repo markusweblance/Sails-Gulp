@@ -1,0 +1,50 @@
+.header {
+	height: 80px;
+	border-bottom: 1px solid $text;
+	&__body {
+		display: flex;
+		align-items: center;
+		height: 100%;
+		
+	}
+
+	&__logo {
+		width: 60px;
+		height: auto;
+		margin-left: 40px;
+	}
+
+	&__nav {
+		// margin-left: 289px;
+		// @media (max-width: 1440px){
+		// 	margin-left: width(150, 289, 1024, 1440)
+		// }
+	}
+
+	&__link {
+		margin-left: 63px;
+		@include inter-regular;
+		font-size: 16px;
+		line-height: 19px;
+		padding: 0 40px 0 35px;
+		background-color: $pink;
+		display: flex;
+		align-items: center;
+		height: 100%;
+	}
+}
+.svg-logo-dims {
+}
+.nav {
+	&__items {
+		display: flex;
+		gap: 50px
+	}
+
+	&__item {
+		@include inter-regular;
+		font-size: 18px;
+		line-height: 22px;
+		text-transform: uppercase;
+	}
+}

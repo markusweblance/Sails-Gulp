@@ -1,0 +1,28 @@
+@import 'fonts.scss';
+@import 'helpers/variables.scss';
+@import 'helpers/mixin.scss';
+@import 'helpers/reset.scss';
+@import 'helpers/func.scss';
+
+@import 'part/header.scss';
+@import 'part/footer.scss';
+
+body{
+	background-color: $fon;
+}
+
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	max-width: 1470px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.main{
+	flex: 1 1 auto;
+}
+
+@import 'pages/main.scss'
